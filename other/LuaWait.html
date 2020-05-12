@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+	<body>
+		<p>
+			An example of a wait() function in Lua
+			<code>
+				local function wait(seconds)
+					local start = os.time()
+					repeat until os.time() > start + seconds
+				end
+			</code>
+		</p>
+	</body>
+</html>
